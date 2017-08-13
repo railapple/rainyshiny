@@ -86,7 +86,7 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource, C
                         self.forecasts.append(forecast)
                        
                     }
-                    self.forecasts.remove(at: 0)
+                  
                      self.tableView.reloadData()
                     
                 }
