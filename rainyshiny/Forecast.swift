@@ -22,7 +22,7 @@ class Forecast {
         return _date
     }
     var weatherType: String {
-        if _weatherType == nil {
+        if _weatherType == nil || _weatherType == "Mist" {
             _weatherType = ""
         }
         return _weatherType
@@ -48,13 +48,15 @@ class Forecast {
             if let min = temp["min"] as? Double {
                 
                 let kelvinToCentigrade = min - 273.15
-                self._lowTemp = "\(kelvinToCentigrade)"
+                let roundedLowTemp = Double(round(100*kelvinToCentigrade)/100)
+                self._lowTemp = "\(roundedLowTemp)"
                 print(self._lowTemp)
             }
             
             if let max = temp["max"] as? Double {
                 let kelvinToCentigrade = max - 273.15
-                self._highTemp = "\(kelvinToCentigrade)"
+                let roundedHighTemp = Double(round(100*kelvinToCentigrade)/100)
+                self._highTemp = "\(roundedHighTemp)"
                 print(self._highTemp)
             }
             

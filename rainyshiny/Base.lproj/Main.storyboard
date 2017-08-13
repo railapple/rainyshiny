@@ -85,7 +85,7 @@
                                 <rect key="frame" x="0.0" y="300" width="414" height="436"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="weatherCell" rowHeight="117" id="p3i-lf-sjf">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="weatherCell" rowHeight="117" id="p3i-lf-sjf" customClass="WeatherCell" customModule="rainyshiny" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="117"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="p3i-lf-sjf" id="Ohu-ZX-W8E">
@@ -131,7 +131,7 @@
                                                         </stackView>
                                                     </subviews>
                                                 </stackView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="e2B-4Q-8Qz">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="e2B-4Q-8Qz">
                                                     <rect key="frame" x="31" y="18" width="80" height="80"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="80" id="lXx-mj-1c6"/>
@@ -150,6 +150,13 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <connections>
+                                            <outlet property="dayLbl" destination="4Y9-Xw-AK6" id="jdp-H7-oBu"/>
+                                            <outlet property="highTemp" destination="3eg-8Q-f4C" id="maU-uV-hlN"/>
+                                            <outlet property="lowTemp" destination="Ghg-qt-l7j" id="cpR-qg-iL0"/>
+                                            <outlet property="weatherIcon" destination="e2B-4Q-8Qz" id="hsQ-jd-CQ3"/>
+                                            <outlet property="weatherType" destination="TLk-uE-CKR" id="bhh-ps-WtH"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

@@ -37,7 +37,7 @@ class CurrentWeather {
     }
     
    var weatherType: String {
-        if _weatherType == nil {
+        if _weatherType == nil || _weatherType == "Mist" {
             _weatherType = ""
         }
         return _weatherType
@@ -54,8 +54,7 @@ class CurrentWeather {
     
     func downloadWeatherDetails(completed: @escaping DownloadComplete) {
         // Alamofire download
-        let currentWeatherURL = URL(string: CURRENT_WEATHER_URL)!
-        Alamofire.request(currentWeatherURL).responseJSON { response in
+        Alamofire.request(CURRENT_WEATHER_URL).responseJSON { response in
             //print(response)
             let result = response.result
             
@@ -75,7 +74,8 @@ class CurrentWeather {
                     if let currentTemperature = main["temp"] as? Double {
                         
                         let kelvinToCentigrade = currentTemperature - 273.15
-                        self._currentTemp = kelvinToCentigrade
+                        let roundedCurrentTemp = Double(round(100*kelvinToCentigrade/100))
+                        self._currentTemp = roundedCurrentTemp
                         print(self._currentTemp)
                     }
                 }

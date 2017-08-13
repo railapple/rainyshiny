@@ -15,6 +15,8 @@
 		1D388EB11F39C32100E1C41D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D388EB01F39C32100E1C41D /* Constants.swift */; };
 		1D388EB51F39C51E00E1C41D /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D388EB41F39C51E00E1C41D /* CurrentWeather.swift */; };
 		1D56BBA01F3B02E700FA745D /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D56BB9F1F3B02E700FA745D /* Forecast.swift */; };
+		1DAEB0311F3F558200A87D11 /* WeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAEB0301F3F558200A87D11 /* WeatherCell.swift */; };
+		1DAEB0331F405AC300A87D11 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAEB0321F405AC300A87D11 /* Location.swift */; };
 		7FD3AEE647484D1318240791 /* Pods_rainyshiny.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D940343F37FDC3FCD3DD0B4B /* Pods_rainyshiny.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +31,8 @@
 		1D388EB01F39C32100E1C41D /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		1D388EB41F39C51E00E1C41D /* CurrentWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
 		1D56BB9F1F3B02E700FA745D /* Forecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
+		1DAEB0301F3F558200A87D11 /* WeatherCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherCell.swift; sourceTree = "<group>"; };
+		1DAEB0321F405AC300A87D11 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		858C59795E1D5D3295DAAF72 /* Pods-rainyshiny.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rainyshiny.debug.xcconfig"; path = "Pods/Target Support Files/Pods-rainyshiny/Pods-rainyshiny.debug.xcconfig"; sourceTree = "<group>"; };
 		B515FE63138F021A08F0990B /* Pods-rainyshiny.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rainyshiny.release.xcconfig"; path = "Pods/Target Support Files/Pods-rainyshiny/Pods-rainyshiny.release.xcconfig"; sourceTree = "<group>"; };
 		D940343F37FDC3FCD3DD0B4B /* Pods_rainyshiny.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rainyshiny.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,8 +55,8 @@
 			children = (
 				1D388E9D1F38C51400E1C41D /* rainyshiny */,
 				1D388E9C1F38C51400E1C41D /* Products */,
-				B688ADA18DC1714F041D936C /* Pods */,
 				71FA9913D027E675717F730D /* Frameworks */,
+				B688ADA18DC1714F041D936C /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,6 +73,7 @@
 			children = (
 				1D388E9E1F38C51400E1C41D /* AppDelegate.swift */,
 				1D388EA01F38C51400E1C41D /* WeatherVC.swift */,
+				1DAEB0301F3F558200A87D11 /* WeatherCell.swift */,
 				1D388EA21F38C51400E1C41D /* Main.storyboard */,
 				1D388EA51F38C51400E1C41D /* Assets.xcassets */,
 				1D388EA71F38C51400E1C41D /* LaunchScreen.storyboard */,
@@ -76,6 +81,7 @@
 				1D388EB01F39C32100E1C41D /* Constants.swift */,
 				1D388EB41F39C51E00E1C41D /* CurrentWeather.swift */,
 				1D56BB9F1F3B02E700FA745D /* Forecast.swift */,
+				1DAEB0321F405AC300A87D11 /* Location.swift */,
 			);
 			path = rainyshiny;
 			sourceTree = "<group>";
@@ -229,9 +235,11 @@
 			files = (
 				1D388EA11F38C51400E1C41D /* WeatherVC.swift in Sources */,
 				1D388E9F1F38C51400E1C41D /* AppDelegate.swift in Sources */,
+				1DAEB0311F3F558200A87D11 /* WeatherCell.swift in Sources */,
 				1D388EB51F39C51E00E1C41D /* CurrentWeather.swift in Sources */,
 				1D388EB11F39C32100E1C41D /* Constants.swift in Sources */,
 				1D56BBA01F3B02E700FA745D /* Forecast.swift in Sources */,
+				1DAEB0331F405AC300A87D11 /* Location.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
